@@ -17,6 +17,7 @@ interface CarrinhoContextData {
   addProduto: (produtoId: number) => Promise<void>;
   removeProduto: (produtoId: number) => void;
   updateProdutoSaldo: ({ produtoId, saldo }: UpdateProdutoSaldo) => void;
+  clearProduto:() => void;
 }
 
 const CarrinhoContext = createContext<CarrinhoContextData>({} as CarrinhoContextData);
@@ -31,6 +32,11 @@ export function CarrinhoProvider({ children }: CarrinhoProviderProps): JSX.Eleme
 
     return [];
   });
+
+  const clearProduto = async () => {
+    const clearCarrinho: Produto[] = [];
+    setCarrinho(clearCarrinho);
+  }
 
   const addProduto = async (produtoId: number) => {
     try {
@@ -111,7 +117,7 @@ export function CarrinhoProvider({ children }: CarrinhoProviderProps): JSX.Eleme
 
   return (
     <CarrinhoContext.Provider
-      value={{ carrinho, addProduto, removeProduto, updateProdutoSaldo }}
+      value={{ carrinho, addProduto, removeProduto, updateProdutoSaldo, clearProduto }}
     >
       {children}
     </CarrinhoContext.Provider>

@@ -114,7 +114,7 @@ const Carrinho = (): JSX.Element => {
       </ProdutoTable>
 
       <footer>
-        <button onClick={handleCliente} type="button">Finalizar pedido</button>
+        <button onClick={handleCliente} type="button">Dados Cliente</button>
         <Total>
           <span>TOTAL</span>
           <strong>{total}</strong>
