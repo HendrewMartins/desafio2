@@ -8,6 +8,7 @@ import {
 import { useCarrinho } from '../../hooks/useCarrinho';
 import { formatPreco } from '../../util/format';
 import { Container, ProdutoTable, Total } from './styles';
+import { useHistory } from 'react-router-dom';
 
 interface Produto {
   id: number;
@@ -19,6 +20,7 @@ interface Produto {
 
 const Carrinho = (): JSX.Element => {
   const { carrinho, removeProduto, updateProdutoSaldo } = useCarrinho();
+  const history = useHistory();
 
   const carrinhoFormatted = carrinho.map(produto => ({
     ...produto,
@@ -44,6 +46,11 @@ const Carrinho = (): JSX.Element => {
   function handleRemoveProduto(productId: number) {
     removeProduto(productId);
   }
+
+  function handleCliente() {
+        history.push('/cliente');
+  }
+
 
   return (
     <Container>
@@ -107,8 +114,7 @@ const Carrinho = (): JSX.Element => {
       </ProdutoTable>
 
       <footer>
-        <button type="button">Finalizar pedido</button>
-
+        <button onClick={handleCliente} type="button">Finalizar pedido</button>
         <Total>
           <span>TOTAL</span>
           <strong>{total}</strong>
