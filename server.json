@@ -1,0 +1,66 @@
+{
+  "estoque": [
+    {
+      "id": 1,
+      "saldo": 3
+    },
+    {
+      "id": 2,
+      "saldo": 5
+    },
+    {
+      "id": 3,
+      "saldo": 2
+    },
+    {
+      "id": 4,
+      "saldo": 1
+    },
+    {
+      "id": 5,
+      "saldo": 5
+    },
+    {
+      "id": 6,
+      "saldo": 10
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "titulo": "Tênis de Caminhada Leve Confortável",
+      "preco": 179.9,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqAibJO21e8Yvf7lm7Tu7u6IMuAu6H9j88vv2OF64fbGInjdh7iKv6AlC37bEb9Az4lKeJDdA&usqp=CAc"
+    },
+    {
+      "id": 2,
+      "titulo": "Tênis VR Caminhada Confortável Detalhes Couro Masculino",
+      "preco": 139.9,
+      "imagem": "https://images-americanas.b2w.io/produtos/01/00/images/97006/1/97006106_1GG.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Tênis Adidas Duramo Lite 2.0",
+      "preco": 219.9,
+      "imagem": "https://point.vteximg.com.br/arquivos/ids/163182-1000-1000/Tenis-Adidas-Duramo-Lite-2.0-Cinza---Point-Calcados---Compre-Agora-.jpg?v=637396636725300000"
+    },
+    {
+      "id": 5,
+      "titulo": "Tênis Caminhada Confortável Masculino",
+      "preco": 139.9,
+      "imagem": "https://i.zst.com.br/thumbs/12/d/38/812855131.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Tênis Mizzuno",
+      "preco": 219.9,
+      "imagem": "https://static.zattini.com.br/produtos/tenis-mizuno-wave-creation-19-feminino/52/D16-2786-252/D16-2786-252_zoom1.jpg?ts=1587534018"
+    },
+    {
+      "id": 4,
+      "titulo": "Tênis de Caminhada Leve Confortável",
+      "preco": 179.9,
+      "imagem": "https://static3.tcdn.com.br/img/img_prod/311840/tenis_adidas_lite_racer_2_0_juvenil_preto_81437_1_20201130184742.jpg"
+    }
+  ]
+}
