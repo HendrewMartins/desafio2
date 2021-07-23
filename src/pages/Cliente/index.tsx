@@ -1,28 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container, Button, ButtonHome } from './styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import { useHistory } from 'react-router-dom';
 
-const initialFormState = {
-    name: "",
-    email: "",
-    password: ""
-};
+//const initialFormState = {
+  //  name: "",
+  //  email: "",
+  //  password: ""
+//};
 
 
 
 const Cliente = (): JSX.Element => {
-    const [form, setForm] = useState(initialFormState);
+    //const [form, setForm] = useState(initialFormState);
     const history = useHistory();
 
-    function setInput(inputName: any) {
-        return (e: any) => {
-            const newValue = { [inputName]: e.target.value };
-            return setForm((form) => ({ ...form, ...newValue }));
-        };
-    }
 
     function handleHome() {
         history.push('/');
