@@ -13,13 +13,13 @@ const Header = (): JSX.Element => {
   return (
     <Container>
       <Link to="/">
-        Desafio
+        Desafio #2
         <img src={logo} alt="Desafio" />
       </Link>
 
       <Carrinho to="/carrinho">
         <div>
-          <strong>Meu carrinho</strong>
+          <strong>Carrinho de Compras</strong>
           <span>
             {carrinhoSize === 1 ? `${carrinhoSize} item` : `${carrinhoSize} itens`}
           </span>
