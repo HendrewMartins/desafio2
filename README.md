@@ -12,7 +12,7 @@ Funcionalidades do Projeto Através do link
 O projeto irá abrir na Home onde é possivel Adicionar os Itens ao Carrinho de Compras 1 ou mais itens validando o saldo disponivel,
 também é possivel clicar no Carrinho de Compra onde será direcionado para a Lista de Compras.
 
-![Alt text](/blob/main/src/assets/readme/Home.PNG?raw=true "HOme")
+![Alt text](https://github.com/HendrewMartins/desafio2/blob/main/src/assets/readme/Home.PNG?raw=true "HOme")
 
 
 
